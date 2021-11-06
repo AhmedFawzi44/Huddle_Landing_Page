@@ -1,0 +1,164 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px  */
+
+body {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+    background-color: var(--Violet);
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width:768px) {
+    body {
+        background-image: url(../images/bg-mobile.svg);
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    padding: 50px 0 100px 50px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.container .image {
+    margin-right: 100px;
+}
+
+@media (max-width:1199px) {
+    .container .image img {
+        max-width: 550px;
+    }
+    .container .content {
+        flex-direction: column;
+    }
+    .container .image {
+        margin: 0 0 100px;
+    }
+    .container .text {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+.container .text {
+    position: relative;
+    bottom: 50px;
+    color: white;
+    width: 500px;
+    /* position: relative; */
+}
+
+@media (max-width:991px) {
+    .container .content {
+        flex-direction: column;
+    }
+    .container .image {
+        margin: 0 0 100px;
+    }
+    .container .text {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    .container .image img {
+        max-width: 500px;
+    }
+}
+
+@media (max-width:576px) {
+    .container .image img {
+        max-width: 350px;
+    }
+}
+
+.container .text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.container .text p {
+    font-size: 20px;
+}
+
+@media (max-width:767px) {
+    .container .text h1 {
+        font-size: 30px;
+    }
+}
+
+.container .text button {
+    margin-top: 10px;
+    padding: 15px 60px;
+    border-radius: 40px;
+    border: none;
+    color: var(--Violet);
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 15px #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container .text button:hover {
+    background-color: var(--Soft-Magenta);
+    transition: .4s;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.social {
+    position: absolute;
+    right: 50px;
+    font-size: 30px;
+    color: black;
+    bottom: 100px;
+}
+
+.social i {
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.social i:hover {
+    color: var(--Soft-Magenta);
+}
+
+@media (max-width:1199px) {
+    .social {
+        position: relative;
+        bottom: 20px;
+        text-align: center;
+        right: 0;
+        margin: 75px 0 0 0;
+    }
+}
+
+@media (max-width:576px) {
+    .logo {
+        padding: 50px 0 50px 50px;
+    }
+}
